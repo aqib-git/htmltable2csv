@@ -1,0 +1,27 @@
+# macOS files
+.DS_Store
+
+tests/test_*.md
+tests/*.pdf
+
+# python auxiliary 
+__pycache__/
+.cache
+*.pyc
+
+# pypi
+dist/
+csv2table.egg-info/
+
+# coverage
+.coverage
+htmlcov/
+
+# pycharm
+.idea/
+
+# rst2html
+README.html
+
+# data
+data/
