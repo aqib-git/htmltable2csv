@@ -6,7 +6,7 @@ Table2CSV is a package for transforming HTML tables in a WebPage to CSV files.
 ### Using as a package inside a project.
 
 ```
-from table2csv import Table2CSV
+from table2csv.table2csv import Table2CSV
 
 Table2CSV('http://example.com/page.html', 'csvfiles')
 ```
@@ -17,5 +17,5 @@ It will parse all the HTML tables in *http://example.com/page.html* and store th
 ### Using as a utility from command line.
 
 ```
-python3 table2csv.py 'http://example.com/page.html' 'csvfiles'
+python3 -m table2csv.table2csv 'http://example.com/page.html' 'csvfiles'
 ```

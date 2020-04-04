@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="table2csv",
-    version="0.3.0",
+    version="0.4.0",
     author="Aqib",
     author_email="aqib@codecrud.com",
     description="Convert HTML tables in a Web Page to CSV files.",
