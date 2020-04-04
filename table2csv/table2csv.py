@@ -1,9 +1,9 @@
 import urllib.request
 import sys
 import os
-
 from pathlib import Path
-from parser import TableParser
+
+from .parser import TableParser
 
 class Table2CSV:
     def __init__(self, url, dest='data'):

@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="table2csv-aqib",
-    version="0.1.0",
+    name="table2csv",
+    version="0.3.0",
     author="Aqib",
     author_email="aqib@codecrud.com",
     description="Convert HTML tables in a Web Page to CSV files.",

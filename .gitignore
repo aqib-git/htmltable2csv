@@ -23,5 +23,7 @@ htmlcov/
 # rst2html
 README.html
 
-# data
+# extra
 data/
+build/
+*.egg-info
