@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="htmltable2csv",
-    version="0.4.0",
+    version="0.5.0",
     author="Aqib",
     author_email="aqib@codecrud.com",
     description="Transform HTML tables in a Web Page to CSV files.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/aqib-git/table2csv",
+    url="https://github.com/aqib-git/htmltable2csv",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

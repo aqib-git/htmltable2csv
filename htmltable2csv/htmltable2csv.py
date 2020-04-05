@@ -1,6 +1,7 @@
 import urllib.request
 import sys
 import os
+import csv
 from pathlib import Path
 
 from .parser import TableParser
@@ -28,18 +29,16 @@ class Table2CSV:
 
         print('Done! Check CSV files in {}'.format(self.dest))
 
-    def tocsv(self, table, index):
-        csv = []
-
-        for tr in table:
-            csv.append(','.join(map(lambda td: repr(td), tr )))
-  
-        filename = Path(self.dest + '/file_' + str(index) + '.csv')
+    def tocsv(self, table, index): 
+        filename = Path(self.dest + '/table_' + str(index + 1) + '.csv')
         
         os.makedirs(os.path.dirname(filename), exist_ok=True)
 
-        with open(Path(self.dest + '/file_' + str(index) + '.csv'), 'w+') as f:
-            f.write("\r\n".join(csv))
+        with open(filename, 'w', newline='') as csvfile:
+            csvwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+            
+            for tr in table:
+                csvwriter.writerow(tr)
 
     def get_html(self, url):
         with urllib.request.urlopen(url) as response:
