@@ -11,7 +11,7 @@ __pycache__/
 
 # pypi
 dist/
-csv2table.egg-info/
+htmltable2csv.egg-info/
 
 # coverage
 .coverage
