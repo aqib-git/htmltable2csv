@@ -1,4 +1,4 @@
-# HTMLTable2CSV
+## HTMLTable2CSV
 
 HTMLTable2CSV is a package for transforming HTML tables in a WebPage to CSV files.
 
