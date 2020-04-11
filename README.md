@@ -18,7 +18,7 @@ from htmltable2csv.htmltable2csv import Table2CSV
 Table2CSV('http://example.com/page.html', 'csvfiles')
 ```
 
-It will parse all the HTML tables in *http://example.com/page.html* and store theme in csvfiles folder.
+It will parse all the HTML tables in http://example.com/page.html and store theme in csvfiles folder.
 
 
 ##### 2. Using as a utility from command line.
