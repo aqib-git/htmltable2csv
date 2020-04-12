@@ -10,7 +10,7 @@ pip install htmltable2csv
 
 ### Usage
 
-##### 1. Using as a package inside a project.
+#### 1. Using as a package inside a project.
 
 a) Fetch HTML content from a Web Page URL.
 
@@ -34,7 +34,7 @@ Table2CSV('/home/aqib/source.html', '/path/to/destination')
 It will parse all the HTML tables in */home/aqib/source.html* file and store theme in specified destination folder.
 
 
-##### 2. Using as a utility from command line.
+#### 2. Using as a utility from command line.
 
 a) Fetch HTML content from a Web Page URL.
 
