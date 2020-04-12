@@ -5,7 +5,7 @@ from urllib.request import urlopen
 from urllib.parse import urlparse
 from pathlib import Path
 
-from parser import TableParser
+from .parser import TableParser
 
 class Table2CSV:
     def __init__(self, source, destination):
@@ -41,7 +41,7 @@ class Table2CSV:
         os.makedirs(os.path.dirname(filename), exist_ok=True)
 
         with open(filename, 'w', newline='') as csvfile:
-            csvwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+            csvwriter = csv.writer(csvfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             
             for tr in table:
                 csvwriter.writerow(tr)
